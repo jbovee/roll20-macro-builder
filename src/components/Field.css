@@ -1,0 +1,27 @@
+.input-container {
+	border: 1px solid #999;
+	border-radius: 2px;
+	padding: 4px 6px;
+	margin-bottom: 2px;
+	font-size: 16px;
+	display: block;
+	white-space: nowrap;
+}
+
+.brackets-l, .brackets-r {
+	color: lightgrey;
+}
+
+.macro-e {
+	display: inline-block;
+	color: black;
+	border: none;
+	background: #f5f5f5;
+	border-radius: 4px;
+	padding: 0px 4px;
+}
+
+span.macro-e[contenteditable]:empty::before {
+	content: attr(data-placeholder);
+	color: lightgrey;
+}

@@ -1,0 +1,536 @@
+.template span {
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.template .desc {
+	width: 189px;
+	border: 1px solid black;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: white;
+}
+
+.template .desc span {
+	font-weight: normal;
+	line-height: 12px;
+	display: block;
+}
+
+.template.simple .t-container {
+	width: 189px;
+	color: black;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.template.simple .rolls {
+	width: 100%;
+	text-align: center;
+	white-space: normal;
+}
+
+.template.simple .roll {
+	width: 84px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 15px;
+}
+
+.template.simple .roll:first-child {
+	margin-left: 8px;
+	margin-right: -3px;
+}
+
+.template.simple .roll:nth-child(3) {
+	margin-right: 8px;
+	margin-left: -3px;
+}
+
+.template.simple .roll span {
+	width: 30px;
+	font-size: 20px;
+	background-color: transparent;
+	border: 0px;
+	padding: 0px;
+}
+
+.template.simple .spacer {
+	width: 0px;
+	border: 1px solid black;
+	display: inline-block;
+	height: 35px;
+}
+
+.template.simple span {
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.template.simple .t-label span span {
+	color: #a0a0a0;
+	border: 0px;
+	font-weight: normal;
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	font-size: 12px;
+}
+
+.template.simple .t-label {
+	text-align: center;
+	margin-top: -3px;
+	padding-bottom: 5px;
+}
+
+.template.simple .charname {
+	text-align: center;
+	margin-top: -10px;
+}
+
+.template.simple .charname span {
+	font-size: 11px;
+	font-weight: normal;
+	color: #a0a0a0;
+}
+
+.template.atk .t-container {
+	width: 189px;
+	color: black;
+	border: 1px solid black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+}
+
+.template.atk .rolls {
+	width: 100%;
+	text-align: center;
+	white-space: normal;
+}
+
+.template.atk .roll {
+	width: 84px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 15px;
+}
+
+.template.atk .roll:first-child {
+	margin-left: 8px;
+	margin-right: -3px;
+}
+
+.template.atk .roll:nth-child(3) {
+	margin-left: 8px;
+	margin-right: -3px;
+}
+
+.template.atk .roll span {
+	width: 30px;
+	font-size: 20px;
+	background-color: transparent;
+	border: 0px;
+	padding: 0px;
+}
+
+.template.atk .spacer {
+	width: 0px;
+	border: 1px solid black;
+	display: inline-block;
+	height: 35px;
+}
+
+.template.atk span {
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.template.atk .sublabel {
+	text-align: center;
+	font-style: italic;
+	margin-top: -2px;
+	min-height: 17px;
+}
+
+.template.atk .desc {
+	width: 189px;
+	border: 1px solid black;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: white;
+}
+
+.template.atk .desc span {
+	font-weight: normal;
+	line-height: 12px;
+	display: block;
+	text-align: left;
+	padding: 0px 5px 0px 5px;
+}
+
+.template.atk .sublabel span {
+	font-weight: normal;
+	color: black;
+}
+
+.template.atk .charname {
+	text-align: center;
+	margin-top: -10px;
+}
+
+.template.atk .charname span {
+	font-size: 11px;
+	font-weight: normal;
+	color: #a0a0a0;
+}
+
+.template.dmg .atk {
+	width: 189px;
+	color: black;
+	border: 1px solid black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+}
+
+.template.dmg .t-container {
+	width: 189px;
+	color: black;
+	border: 1px solid black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: white;
+}
+
+.template.dmg .rolls {
+	width: 100%;
+	text-align: center;
+	white-space: normal;
+}
+
+.template.dmg .sheet-damagetemplate .rolls {
+	min-height: 45px;
+}
+
+.template.dmg .roll {
+	width: 84px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 15px;
+}
+
+.template.dmg .roll:first-child {
+	margin-left: 8px;
+	margin-right: -3px;
+}
+
+.template.dmg .roll:nth-child(3) {
+	margin-right: 8px;
+	margin-left: -3px;
+}
+
+.template.dmg .roll span {
+	width: 30px;
+	font-size: 20px;
+	background-color: transparent;
+	border: 0px;
+	padding: 0px;
+}
+
+.template.dmg .spacer {
+	width: 0px;
+	border: 1px solid black;
+	display: inline-block;
+	height: 35px;
+}
+
+.template.dmg span {
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.template.dmg .t-label {
+	text-align: center;
+	margin-top: -3px;
+	padding-bottom: 5px;
+}
+
+.template.dmg .sheet-damage {
+	text-align: center;
+	margin-top: -5px;
+}
+
+.template.dmg .save .savedc {
+	padding-bottom: 5px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.template.dmg .save .savedc span {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.template.dmg .save .t-label span {
+	font-weight: bold;
+}
+
+.template.dmg .save span {
+	font-weight: normal;
+	line-height: 12px;
+	display: block;
+}
+
+.template.dmg .sublabel {
+	text-align: center;
+	font-style: italic;
+	margin-top: -2px;
+	min-height: 17px;
+}
+
+.template.dmg .sheet-desc {
+	width: 189px;
+	border: 1px solid black;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: white;
+}
+
+.template.dmg .sheet-desc span {
+	font-weight: normal;
+	line-height: 12px;
+	display: block;
+}
+
+.template.dmg .sheet-info span {
+	text-align: left;
+	padding: 0px 5px 0px 5px;
+}
+
+.template.dmg .sheet-damagetemplate .sublabel {
+	display: block;
+	width: 100%;
+	font-size: 10px;
+	font-weight: normal;
+	margin-top: -5px;
+	color: #A0A0A0;
+}
+
+.template.dmg .sublabel span {
+	font-weight: normal;
+	color: black;
+}
+
+.template.dmg {
+	position: relative;
+}
+
+.template.dmg .charname {
+	text-align: center;
+	margin-top: -10px;
+}
+
+.template.dmg .charname span {
+	font-size: 11px;
+	font-weight: normal;
+	color: #A0A0A0;
+}
+
+.template.dmg .t-label .template-inline,.template.dmg .savedc .template-inline {
+	display: inline-block;
+}
+
+.template.atkdmg .t-container.atk {
+	width: 189px;
+	color: black;
+	border: 1px solid black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+}
+
+.template.atkdmg .t-container.sheet-damagetemplate {
+	width: 189px;
+	color: black;
+	border: 1px solid black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: white;
+}
+
+.template.atkdmg .rolls {
+	width: 100%;
+	text-align: center;
+	white-space: normal;
+}
+
+.template.atkdmg .sheet-damagetemplate .rolls {
+	min-height: 45px;
+}
+
+.template.atkdmg .roll {
+	width: 84px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 15px;
+}
+
+.template.atkdmg .roll:first-child {
+	margin-left: 8px;
+	margin-right: -3px;
+}
+
+.template.atkdmg .roll:nth-child(3) {
+	margin-right: 8px;
+	margin-left: -3px;
+}
+
+.template.atkdmg .roll span {
+	width: 30px;
+	font-size: 20px;
+	background-color: transparent;
+	border: 0px;
+	padding: 0px;
+}
+
+.template.atkdmg .spacer {
+	width: 0px;
+	border: 1px solid black;
+	display: inline-block;
+	height: 35px;
+}
+
+.template.atkdmg span {
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.template.atkdmg .t-label span span {
+	color: #A0A0A0;
+	border: 0px;
+	font-weight: normal;
+}
+
+.template.atkdmg .t-label {
+	text-align: center;
+	margin-top: -3px;
+	padding-bottom: 5px;
+}
+
+.template.atkdmg .t-label span span {
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	font-size: 12px;
+}
+
+.template.atkdmg .sheet-damage {
+	text-align: center;
+	margin-top: -5px;
+}
+
+.template.atkdmg .save .savedc {
+	padding-bottom: 5px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.template.atkdmg .save .savedc span {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.template.atkdmg .save .t-label span {
+	font-weight: bold;
+}
+
+.template.atkdmg .desc .t-label span {
+	font-weight: bold;
+}
+
+.template.atkdmg .save span {
+	font-weight: normal;
+	line-height: 12px;
+	display: block;
+}
+
+.template.atkdmg .sublabel {
+	text-align: center;
+	font-style: italic;
+	margin-top: -2px;
+	min-height: 17px;
+}
+
+.template.atkdmg .desc {
+	width: 189px;
+	border: 1px solid black;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: white;
+}
+
+.template.atkdmg .desc span {
+	font-weight: normal;
+	line-height: 12px;
+	display: block;
+}
+
+.template.atkdmg .sheet-info span {
+	text-align: left;
+	padding: 0px 5px 0px 5px;
+}
+
+.template.atkdmg .sheet-damagetemplate .sublabel,
+.template.atkdmg .desc .sublabel {
+	display: block;
+	width: 100%;
+	font-size: 10px;
+	font-weight: normal;
+	margin-top: -5px;
+	color: #A0A0A0;
+}
+
+.template.atkdmg .sublabel span {
+	font-weight: normal;
+	color: black;
+}
+
+.template.atkdmg .charname {
+	text-align: center;
+	margin-top: -10px;
+}
+
+.template.atkdmg .charname span {
+	font-size: 11px;
+	font-weight: normal;
+	color: #A0A0A0;
+}
+
+.template.atkdmg .savedc .template-inline,
+.template.atkdmg .t-label .template-inline {
+	display: inline-block;
+}
