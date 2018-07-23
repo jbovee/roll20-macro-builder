@@ -36,11 +36,7 @@ class App extends Component {
 	}
 
 	handleData(e, field) {
-		if (e.target.value === '') {
-			this.fields[this.state.currentTemplateId][field] = field;
-		} else {
-			this.fields[this.state.currentTemplateId][field] = e.target.value;
-		}
+		this.fields[this.state.currentTemplateId][field] = e.target.value === '' ? field : e.target.value;
 		this.setState({
 			currentFields: this.fields[this.state.currentTemplateId]
 		});
@@ -53,13 +49,14 @@ class App extends Component {
 	}
 
 	render() {
+		let { dropdownOpen, currentTemplateId, currentFields } = this.state;
 		return (
 			<div className="app container">
 				<div className="row" style={{marginTop: (window.innerHeight - 790) / 2}}>
 					<div className="col">
-						<Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+						<Dropdown isOpen={dropdownOpen} toggle={this.toggle}>
 							<DropdownToggle>
-								<Template id={this.state.currentTemplateId} fields={this.state.currentFields} />
+								<Template id={currentTemplateId} fields={currentFields} />
 							</DropdownToggle>
 							<DropdownMenu
 								modifiers={{
@@ -92,7 +89,7 @@ class App extends Component {
 						</Dropdown>
 					</div>
 					<div className="col">
-						<FieldList fields={this.state.currentFields} handlerFromParent={this.handleData} />
+						<FieldList fields={currentFields} handlerFromParent={this.handleData} />
 					</div>
 					<div className="col">
 						<code>

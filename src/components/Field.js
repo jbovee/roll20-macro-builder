@@ -13,12 +13,16 @@ class Field extends Component {
 	}
 
 	render() {
+		let { starttext, endtext, placeholder } = this.props;
 		return (
 			<div className="input-container" onClick={this.focusEditText}>
 				<code>
-					<span className="macro-ne brackets-l">{this.props.starttext}</span>
-					<input className="macro-e" onChange={(e) => this.props.handlerFromParent(e, this.props.placeholder)} placeholder={this.props.placeholder} ref={this.editText}></input>
-					<span className="macro-ne brackets-r">{this.props.endtext}</span>
+					<span className="macro-ne brackets-l">{starttext}</span>
+					<input
+						className="macro-e"
+						onChange={(e) => this.props.handlerFromParent(e, placeholder)}
+						placeholder={placeholder} ref={this.editText} />
+					<span className="macro-ne brackets-r">{endtext}</span>
 				</code>
 			</div>
 		);
