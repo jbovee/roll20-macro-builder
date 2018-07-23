@@ -164,6 +164,25 @@
 	min-height: 17px;
 }
 
+.template.atk .t-label span span {
+	color: #A0A0A0;
+	border: 0px;
+	font-weight: normal;
+}
+
+.template.atk .t-label {
+	text-align: center;
+	margin-top: -3px;
+	padding-bottom: 5px;
+}
+
+.template.atk .t-label span span {
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	font-size: 12px;
+}
+
 .template.atk .desc {
 	width: 189px;
 	border: 1px solid black;

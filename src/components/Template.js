@@ -39,7 +39,7 @@ class Template extends Component {
 			);
 		}
 		else if (id === 2) {
-			let { r1, r2, range, charname, desc } = this.props.fields;
+			let { r1, r2, range, rname, mod, charname, desc } = this.props.fields;
 			return (
 				<div className="template atk">
 					<div className="t-container">
@@ -54,6 +54,9 @@ class Template extends Component {
 						</div>
 						<div className="sublabel">
 							<span>{range ? range : "range"}</span>
+						</div>
+						<div className="t-label">
+							<span>{rname ? rname : "rname"} <span>{mod ? "(" + mod + ")" : "(mod)"}</span></span>
 						</div>
 						<div className="charname">
 							<span>{charname ? charname : "charname"}</span>

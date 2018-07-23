@@ -14,7 +14,7 @@ class App extends Component {
 		this.fields = [
 			{"desc": ""},
 			{"r1": "", "r2": "", "rname": "", "mod": "", "charname": ""},
-			{"r1": "", "r2": "", "range": "", "charname": "", "desc": ""},
+			{"r1": "", "r2": "", "range": "", "rname": "", "mod": "", "charname": "", "desc": ""},
 			{"dc": "", "savedc": "", "savedesc": "", "saveattr": "", "save": "", "desc": "", "higherdmg": "", "higherdmgtype": "", "higherlvl": "", "dmg1": "", "dmg1type": "", "dmg2": "", "dmg2type": "", "range": "", "rname": "", "charname": ""},
 			{"r1": "", "r2": "", "range": "", "rname": "", "mod": "", "charname": "", "dc": "", "savedesc": "", "saveattr": "", "save": "", "desc": "", "higherdmg": "", "higherdmgtype": "", "higherlvl": "", "dmg1": "", "dmg1type": "", "dmg2": "", "dmg2type": ""}
 		];
