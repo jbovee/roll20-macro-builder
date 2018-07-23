@@ -29,7 +29,7 @@ class Template extends Component {
 							</div>
 						</div>
 						<div className="t-label">
-							<span>{rname ? rname : "rname"} <span>{mod ? mod : "mod"}</span></span>
+							<span>{rname ? rname : "rname"} <span>{mod ? "(" + mod + ")" : "(mod)"}</span></span>
 						</div>
 						<div className="charname">
 							<span>{charname ? charname : "charname"}</span>
@@ -141,7 +141,7 @@ class Template extends Component {
 							<span>{range ? range : "range"}</span>
 						</div>
 						<div className="t-label">
-							<span>{rname ? rname : "rname"} <span>{mod ? mod : "mod"}</span></span>
+							<span>{rname ? rname : "rname"} <span>{mod ? "(" + mod + ")" : "(mod)"}</span></span>
 						</div>
 						<div className="charname">
 							<span>{charname ? charname : "charname"}</span>
