@@ -20,7 +20,7 @@ class Field extends Component {
 					<span className="macro-ne brackets-l">{starttext}</span>
 					<input
 						className="macro-e"
-						onChange={(e) => this.props.handlerFromParent(e, placeholder)}
+						onKeyUp={(e) => this.props.handlerFromParent(e, placeholder)}
 						placeholder={placeholder} ref={this.editText} />
 					<span className="macro-ne brackets-r">{endtext}</span>
 				</code>
