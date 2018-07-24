@@ -11,6 +11,7 @@ class App extends Component {
 		this.handleData = this.handleData.bind(this);
 		this.changeTemplate = this.changeTemplate.bind(this);
 		this.templateNames = ["Description", "Simple", "Attack", "Damage", "Attack & Damage"];
+		this.templateShort = ["desc", "simple", "atk", "dmg", "atkdmg"];
 		this.fields = [
 			{"desc": ""},
 			{"r1": "", "r2": "", "rname": "", "mod": "", "charname": ""},
@@ -50,6 +51,7 @@ class App extends Component {
 
 	render() {
 		let { dropdownOpen, currentTemplateId, currentFields } = this.state;
+		let output = "&{template:" + this.templateShort[currentTemplateId] + "} " + Object.entries(currentFields).map(([k,v]) => "{{" + k + "=" + v + "}}").join(' ');
 		return (
 			<div className="app container">
 				<div className="row" style={{marginTop: (window.innerHeight - 790) / 2}}>
@@ -93,7 +95,7 @@ class App extends Component {
 					</div>
 					<div className="col">
 						<code>
-							<textarea className="result-single" spellCheck={false} readOnly>temp</textarea>
+							<textarea className="result-single" spellCheck={false} wrap="hard" value={output} readOnly />
 						</code>
 					</div>
 				</div>
