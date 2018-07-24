@@ -12,7 +12,10 @@ roll20-macro-builder uses [reactjs](https://reactjs.org) to generate macros for 
 Users can pick from any of the OGL (5e character sheet) templates, fill out the fields for that template, and immediately see how their macro will look when used.
 
 ## Future
-- Adding buttons to template
+- Fix word wrapping for longer filled out fields
+- Create parser for dice rolls and more, to give more accurate preview
+- Add hover tooltips to preview
+- Add ability to add buttons to template
 	- Button to add at cursor
 	- New form specifically for buttons
 	- Modify preview to show button style
