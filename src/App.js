@@ -51,7 +51,10 @@ class App extends Component {
 
 	render() {
 		let { dropdownOpen, currentTemplateId, currentFields } = this.state;
-		let output = "&{template:" + this.templateShort[currentTemplateId] + "} " + Object.entries(currentFields).map(([k,v]) => "{{" + k + "=" + v + "}}").join(' ');
+		let output = "&{template:" + this.templateShort[currentTemplateId] + "} " +
+			Object.entries(currentFields).map(([k,v]) =>
+				v === "" ? "{{" + k + "=" + k + "}}" : "{{" + k + "=" + v + "}}"
+			).join(' ');
 		return (
 			<div className="app container">
 				<div className="row" style={{marginTop: (window.innerHeight - 790) / 2}}>
