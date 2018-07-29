@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FieldList from './components/FieldList';
 import Template from './components/Template';
+import Output from './components/Output';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './App.css';
 
@@ -97,9 +98,7 @@ class App extends Component {
 						<FieldList fields={currentFields} handlerFromParent={this.handleData} />
 					</div>
 					<div className="col">
-						<code>
-							<textarea className="result-single" spellCheck={false} wrap="hard" value={output} readOnly />
-						</code>
+						<Output value={output} />
 					</div>
 				</div>
 			</div>
