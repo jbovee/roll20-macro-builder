@@ -83,13 +83,12 @@ class App extends Component {
 								}}
 							>
 								{this.templateNames.map((name, i) => {
-									if (i === this.templateNames.length-1) {
-										return <DropdownItem onClick={() => {this.changeTemplate(i);}}>{name}<Template id={i} fields={this.fields[i]} /></DropdownItem>
-									}
-									return [
-										<DropdownItem onClick={() => {this.changeTemplate(i);}}>{name}<Template id={i} fields={this.fields[i]} /></DropdownItem>,
-										<DropdownItem divider/>
-									]
+									return i === this.templateNames.length-1 ?
+										<DropdownItem onClick={() => {this.changeTemplate(i);}}>{name}<Template id={i} fields={this.fields[i]} /></DropdownItem> :
+										[
+											<DropdownItem onClick={() => {this.changeTemplate(i);}}>{name}<Template id={i} fields={this.fields[i]} /></DropdownItem>,
+											<DropdownItem divider/>
+										];
 								})}
 							</DropdownMenu>
 						</Dropdown>
